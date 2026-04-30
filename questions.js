@@ -104,8 +104,8 @@ const questions = [
     },
     {
         question: "V případě frekvenční modulace se kmitočet složek v postranním pásmu vypočte vzorcem",
-        options: ["f= fc – fm", "f= fm – Ω", "f= fm – fc"],
-        answer: "f= fc – fm"
+        options: ["f = f<sub>c</sub> – f<sub>m</sub>", "f = f<sub>m</sub> – Ω", "f = f<sub>m</sub> – f<sub>c</sub>"],
+        answer: "f = f<sub>c</sub> – f<sub>m</sub>"
     },
     {
         question: "Vyber správnou odpověď:",
@@ -195,8 +195,9 @@ const questions = [
     },
     {
         question: "Které dispozice jsou spojené s pravou mozkovou hemisférou? (vyber všechny správné odpovědi)",
-        options: ["hudba, rytmus, tvořivost, fantazie", "analytické myšlení, fakta", "tvořivost, analytické myšlení", "tvořivost, rytmus"],
-        answer: "hudba, rytmus, tvořivost, fantazie"
+        type: "multiselect",
+        options: ["tvořivost", "rytmus", "hudba", "analytické myšlení", "fakta", "logika", "fantazie", "čísla"],
+        correctAnswers: ["tvořivost", "rytmus", "hudba", "fantazie"]
     },
     {
         question: "Rozsazení nástrojů na obrázku platí nejvíce pro",
@@ -252,12 +253,12 @@ const questions = [
     },
     {
         question: "Spodní hranice nejcitlivějšího pásma lidského sluchu začíná od ...... (Hz)",
-        options: ["3500", "500", "1000", "8000"],
+        type: "text",
         answer: "3500"
     },
     {
         question: "Pokud se dva výškově bližší tóny sejdou v jednom ........pásmu, začnou se projevovat drsností i rázy.",
-        options: ["barkovém", "kmitočtovém", "frekvenčním", "harmonickém"],
+        type: "text",
         answer: "barkovém"
     },
     {
@@ -302,8 +303,11 @@ const questions = [
     {
         question: "Doplň do vzorce správné parametry pro výpočet indexu FM modulace",
         questionImage: "media/image (2).png",
-        options: ["čitatel → Δf, jmenovatel → fm", "čitatel → fm, jmenovatel → Δf", "čitatel → Um, jmenovatel → R", "čitatel → I, jmenovatel → π"],
-        answer: "čitatel → Δf, jmenovatel → fm"
+        type: "dropdown",
+        dropdowns: [
+            { label: "čitatel", options: ["Δf", "f<sub>m</sub>", "U<sub>m</sub>", "I", "π", "R"], answer: "Δf" },
+            { label: "jmenovatel", options: ["Δf", "f<sub>m</sub>", "U<sub>m</sub>", "I", "π", "R"], answer: "f<sub>m</sub>" }
+        ]
     },
     {
         question: "Cochlea je naplněna endolymfou, která přenáší vibrace na membránu Cortiho orgánu.",
@@ -377,7 +381,7 @@ const questions = [
         answer: "Zákon o zachování energie"
     },
     {
-        question: "Místnost a ambience se bude projevovat (seřaď od nejvíce po nejméně) koule osmička ledvina úzká směrovost (seřaď od nejvíce po nejméně)",
+        question: "Místnost a ambience se bude projevovat (seřaď od nejvíce po nejméně): koule, osmička, ledvina, úzká směrovost",
         options: ["koule → osmička → ledvina → úzká směrovost", "úzká směrovost → ledvina → osmička → koule", "osmička → koule → ledvina → úzká směrovost", "ledvina → koule → osmička → úzká směrovost"],
         answer: "koule → osmička → ledvina → úzká směrovost"
     },
@@ -515,16 +519,20 @@ const questions = [
         answer: "kovové"
     },
     {
-        question: "Doplň veličiny do správného místa ve vzorci μ1 – spektrální těžiště μ2 – spektrální rozpětí (μ₁ = spektrální těžiště, μ₂ = spektrální rozpětí)",
+        question: "Doplň veličiny do správného místa ve vzorci (μ₁ = spektrální těžiště, μ₂ = spektrální rozpětí)",
         questionImage: "media/šikmost.jpg",
-        options: ["μ₁ do čitatele, μ₂ do jmenovatele", "μ₂ do čitatele, μ₁ do jmenovatele", "μ₁ do jmenovatele, μ₂ do čitatele (stejné)", "Obě veličiny μ₁ i μ₂ do čitatele"],
+        options: ["μ₁ do čitatele, μ₂ do jmenovatele", "μ₂ do čitatele, μ₁ do jmenovatele", "μ₁ do jmenovatele, μ₂ do čitatele"],
         answer: "μ₁ do čitatele, μ₂ do jmenovatele"
     },
     {
-        question: "Doplň názvy termíny do obrázku tectoriální membrána vláskové buňky vlákna sluchového nervu basilární membrána endolymfa",
+        question: "Doplň názvy termíny do obrázku\ntectoriální membrána\nvláskové buňky\nvlákna sluchového nervu\nbasilární membrána\nendolymfa",
         questionImage: "media/Cortiho orgán.png",
-        options: ["3 → tectoriální membrána, 17 → vlákna sluchového nervu, 5 → vláskové buňky", "3 → vláskové buňky, 17 → tectoriální membrána, 5 → vlákna sluchového nervu", "3 → basilární membrána, 17 → vláskové buňky, 5 → endolymfa", "3 → endolymfa, 17 → basilární membrána, 5 → tectoriální membrána"],
-        answer: "3 → tectoriální membrána, 17 → vlákna sluchového nervu, 5 → vláskové buňky"
+        type: "dropdown",
+        dropdowns: [
+            { label: "3", options: ["tectoriální membrána", "vláskové buňky", "vlákna sluchového nervu", "basilární membrána", "endolymfa"], answer: "tectoriální membrána" },
+            { label: "17", options: ["tectoriální membrána", "vláskové buňky", "vlákna sluchového nervu", "basilární membrána", "endolymfa"], answer: "vlákna sluchového nervu" },
+            { label: "5", options: ["tectoriální membrána", "vláskové buňky", "vlákna sluchového nervu", "basilární membrána", "endolymfa"], answer: "vláskové buňky" }
+        ]
     },
     {
         question: "Groove box slouží hlavně a převážně pro nahrávání jednotlivých vzorků (samplů) a jejich úpravu.",
@@ -595,7 +603,7 @@ const questions = [
     {
         question: "V případě frekvenční modulace velikost modulů složek v postranních pásmech",
         options: ["nezáleží na indexu modulace", "záleží na indexu modulace"],
-        answer: "nezáleží na indexu modulace"
+        answer: "záleží na indexu modulace"
     },
     {
         question: "Na vlásenky tlačí",
@@ -701,7 +709,7 @@ const questions = [
         answer: "Pravda"
     },
     {
-        question: "Ve vzorci frekvenční modulace mfm označuje",
+        question: "Ve vzorci frekvenční modulace m<sub>fm</sub> označuje",
         options: ["Koeficient šířky postranních pásem", "Modulační index frekvenční modulace", "Besselova funkce IV. druhu n-tého řádu"],
         answer: "Modulační index frekvenční modulace"
     }
