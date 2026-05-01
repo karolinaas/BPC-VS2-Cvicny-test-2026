@@ -1,13 +1,6 @@
-# Šablona pro tvorbu interaktivních webových testů
+# Cvičný test na zkoušku z předmětu BPC-VS2
 
 ---
 
-Ukázkový test je na stránce https://karolinaas.github.io/interaktivni-test
+Ukázkový test je na stránce https://karolinaas.github.io/BPC-VS2-Cvicny-test-2026
 
-## Tvorba otázek
-
-Otázky jsou v souboru `questions.js`.
-
-## Vložení médií
-
-Test podporuje vkládání obrázků a zvukových souborů. Doporučuji obrázky a zvukové nahrávky vkládat do separátní složky, například `/media/`
