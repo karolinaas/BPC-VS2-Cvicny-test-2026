@@ -172,7 +172,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Interaktivní test</h1>
+        <h1>VS2 Cvičný Test 2026</h1>
         <div id="quizForm"></div>
         <div id="stats" class="stats"></div>
     </div>
@@ -338,7 +338,7 @@
                     ${question.questionImage ? `<img src="${question.questionImage}" alt="Obrázek v otázce" class="question-image">` : ''}
                     ${question.image ? `<img src="${question.image}" alt="Obrázek">` : ''}
                     ${question.audio ? `<audio controls><source src="${question.audio}" type="audio/mpeg">Váš prohlížeč nepodporuje audio element.</audio>` : ''}
-                    ${question.type === 'multiselect' ? `<div class="options">${optionsHTML}</div>` : optionsHTML}
+                    ${(question.type === 'multiselect' || !question.type) ? `<div class="options">${optionsHTML}</div>` : optionsHTML}
                     ${!answered ? `<div class="submit-button"><button type="button" onclick="submitAnswer()">Odeslat odpověď</button></div>` : ''}
                     ${answered ? `<div class="feedback">${getFeedback(question)}</div>` : ''}
                 </div>
