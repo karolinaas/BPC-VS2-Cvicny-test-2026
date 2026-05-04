@@ -712,5 +712,93 @@ const questions = [
         question: "Ve vzorci frekvenční modulace m<sub>fm</sub> označuje",
         options: ["Koeficient šířky postranních pásem", "Modulační index frekvenční modulace", "Besselova funkce IV. druhu n-tého řádu"],
         answer: "Modulační index frekvenční modulace"
+    },
+    {
+        question: "Velký buben, malý bubínek a tom tomy se budou vzájemně makovat v pásmech:",
+        options: [
+            "50-100 Hz",
+            "150-300 Hz",
+            "500-700 Hz"
+        ],
+        answer: "150-300 Hz"
+    },
+    {
+        question: "Jaký typ mikrofonu je na fotce?",
+        questionImage: "media/c12 (1).jpg",
+        options: [
+            "kondenzátorový",
+            "tlakový",
+            "elektronkový",
+            "ribbon"
+        ],
+        answer: "elektronkový"
+    },
+    {
+        question: "Horní hranice nejcitlivějšího pásma lidského sluchu leží na ........(Hz)",
+        type: "text",
+        answer: "5000"
+    },
+    {
+        question: "Asper je",
+        options: [
+            "ostrost úzkopásmového šumu o šířce kritického pásma se střední frekvencí 1000 Hz za akustického tlaku 60 dB.",
+            "drsnost sinusu o frekvenci 3500 Hz, akustickém tlaku 60 dB modulovaného AM modulačním kmitočtem 1000 Hz",
+            "drsnost sinusu o frekvenci 1000 Hz, akustickém tlaku 60 dB modulovaného AM modulačním kmitočtem 70 Hz.",
+            "drsnost sinusu o frekvenci 1000 Hz, akustickém tlaku 60 dB modulovaného FM modulačním kmitočtem 70 Hz."
+        ],
+        answer: "drsnost sinusu o frekvenci 1000 Hz, akustickém tlaku 60 dB modulovaného AM modulačním kmitočtem 70 Hz."
+    },
+    {
+        question: "Na obrázku je",
+        questionImage: "media/smycce.jpg",
+        options: [
+            "tradiční evropské rozsazení smyčců",
+            "moderní americké rozsazení smyčců"
+        ],
+        answer: "tradiční evropské rozsazení smyčců"
+    },
+    {
+        question: "Mezi stěžejní efekty kláves Rhodes nepatří",
+        options: [
+            "zkreslení",
+            "chorus",
+            "tremolo",
+            "gate"
+        ],
+        answer: "gate"
+    },
+    {
+        question: "Jaká mikrofonní párová technika je na obrázku?",
+        questionImage: "media/DIN.jpg",
+        options: [
+            "NOS",
+            "XY",
+            "AB",
+            "DIN"
+        ],
+        answer: "DIN"
+    },
+    {
+        question: "Přiřaď zkratky ke odpovídajícím názvům",
+        type: "dropdown",
+        dropdowns: [
+            { label: "RM", options: ["kruhový modulátor", "klaviatura", "šumový generátor", "generátor obálky", "napěťově řízený filtr", "nízkofrekvenční oscilátor"], answer: "kruhový modulátor" },
+            { label: "KBD", options: ["kruhový modulátor", "klaviatura", "šumový generátor", "generátor obálky", "napěťově řízený filtr", "nízkofrekvenční oscilátor"], answer: "klaviatura" },
+            { ůabel: "NG", options: ["kruhový modulátor", "klaviatura", "šumový generátor", "generátor obálky", "napěťově řízený filtr", "nízkofrekvenční oscilátor"], answer: "šumový generátor" },
+            { label: "EG", options: ["kruhový modulátor", "klaviatura", "šumový generátor", "generátor obálky", "napěťově řízený filtr", "nízkofrekvenční oscilátor"], answer: "generátor obálky" },
+            { label: "VCF", options: ["kruhový modulátor", "klaviatura", "šumový generátor", "generátor obálky", "napěťově řízený filtr", "nízkofrekvenční oscilátor"], answer: "napěťově řízený filtr" },
+            { label: "LFO", options: ["kruhový modulátor", "klaviatura", "šumový generátor", "generátor obálky", "napěťově řízený filtr", "nízkofrekvenční oscilátor"], answer: "nízkofrekvenční oscilátor" }
+        ]
+    },
+    {
+        question: "Na obrázku je zobrazena",
+        questionImage: "media/AM.png",
+        options: [
+            "Křížová syntéza",
+            "AM",
+            "Vektorová syntéza",
+            "FM"
+        ],
+        answer: "FM"
     }
 ];
