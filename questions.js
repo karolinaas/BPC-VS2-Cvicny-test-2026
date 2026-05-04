@@ -382,8 +382,13 @@ const questions = [
     },
     {
         question: "Místnost a ambience se bude projevovat (seřaď od nejvíce po nejméně): koule, osmička, ledvina, úzká směrovost",
-        options: ["koule → osmička → ledvina → úzká směrovost", "úzká směrovost → ledvina → osmička → koule", "osmička → koule → ledvina → úzká směrovost", "ledvina → koule → osmička → úzká směrovost"],
-        answer: "koule → osmička → ledvina → úzká směrovost"
+        type: "dropdown",
+        dropdowns: [
+            { label: "1.", options: ["koule", "osmička", "ledvina", "úzká směrovost"], answer: "koule" },
+            { label: "2.", options: ["koule", "osmička", "ledvina", "úzká směrovost"], answer: "osmička" },
+            { label: "3.", options: ["koule", "osmička", "ledvina", "úzká směrovost"], answer: "ledvina" },
+            { label: "4.", options: ["koule", "osmička", "ledvina", "úzká směrovost"], answer: "úzká směrovost" }
+        ]
     },
     {
         question: "Při vektorové syntézé pracujeme se zónami, ve kterých se nacházejí různé vzorky zvuku a které např. pomocí joysticku různou měrou prolínáme.",
@@ -784,7 +789,7 @@ const questions = [
         dropdowns: [
             { label: "RM", options: ["kruhový modulátor", "klaviatura", "šumový generátor", "generátor obálky", "napěťově řízený filtr", "nízkofrekvenční oscilátor"], answer: "kruhový modulátor" },
             { label: "KBD", options: ["kruhový modulátor", "klaviatura", "šumový generátor", "generátor obálky", "napěťově řízený filtr", "nízkofrekvenční oscilátor"], answer: "klaviatura" },
-            { ůabel: "NG", options: ["kruhový modulátor", "klaviatura", "šumový generátor", "generátor obálky", "napěťově řízený filtr", "nízkofrekvenční oscilátor"], answer: "šumový generátor" },
+            { label: "NG", options: ["kruhový modulátor", "klaviatura", "šumový generátor", "generátor obálky", "napěťově řízený filtr", "nízkofrekvenční oscilátor"], answer: "šumový generátor" },
             { label: "EG", options: ["kruhový modulátor", "klaviatura", "šumový generátor", "generátor obálky", "napěťově řízený filtr", "nízkofrekvenční oscilátor"], answer: "generátor obálky" },
             { label: "VCF", options: ["kruhový modulátor", "klaviatura", "šumový generátor", "generátor obálky", "napěťově řízený filtr", "nízkofrekvenční oscilátor"], answer: "napěťově řízený filtr" },
             { label: "LFO", options: ["kruhový modulátor", "klaviatura", "šumový generátor", "generátor obálky", "napěťově řízený filtr", "nízkofrekvenční oscilátor"], answer: "nízkofrekvenční oscilátor" }
