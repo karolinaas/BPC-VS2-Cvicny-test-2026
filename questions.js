@@ -805,5 +805,51 @@ const questions = [
             "FM"
         ],
         answer: "FM"
+    },
+    {
+        question: "Číslo u \"drawbars\"/táhel označuje",
+        options: [
+            "původní délku píšťaly u kostelních varhan, „drawbars\" tvoří dohromady inharmonickou škálu",
+            "původní délku píšťaly u kostelních varhan, a to ve stopách",
+            "intenzitu tónu"
+        ],
+        answer: "původní délku píšťaly u kostelních varhan, a to ve stopách"
+    },
+    {
+        question: "Jakým akustickým zvukům se nejvíce podobá suchý témbr kláves Rhodes, Wurlizer ad.?",
+        options: [
+            "Celestě",
+            "Zvonům",
+            "Xylofonu"
+        ],
+        answer: "Celestě"
+    },
+    {
+        question: "Který výraz, nepatří mezi zkreslení",
+        options: [
+            "distortion",
+            "presence",
+            "overdrive",
+            "screamer",
+            "fuzz"
+        ],
+        answer: "presence"
+    },
+    {
+        question: "Při vkládání efektů cestou Insert",
+        options: [
+            "jde o paralelní zapojení efektu",
+            "jde o sériové zapojení efektu"
+        ],
+        answer: "jde o sériové zapojení efektu"
+    },
+    {
+        question: "Parametrem Presence posilujeme",
+        options: [
+            "pásmo pod úrovní treshold",
+            "basové pásmo",
+            "pásmo ostrostí",
+        ],
+        answer: "pásmo ostrostí"
     }
 ];
